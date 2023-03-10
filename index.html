@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip calculator</title>
+    <link rel="stylesheet" href="style.css">   <!-- linking of the css file -->
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container1" id="container2">
+        <h1>Tip calculator</h1>
+    </div>
+
+
+    <div class="container" id="container1">
+        <div class="main">
+
+            <label for="bill" id="bill2">Bill amount:</label><br>
+            <input type="number" name="bill" id="bill1">         <!-- input field for Bill amount-->
+
+            <br><br>
+
+            <label for="tip">Enter tip %:</label><br>
+            <input type="number" name="tip" id="tip">        <!-- input field for tip%-->
+
+            <br><br>
+
+            <label for="people ">Number of people:</label><br>
+            <input type="number" name="people" id="people">     <!-- input field for number of people-->
+            <br><br>
+
+
+
+            <button type="button" value="generate" id="generate1" onclick="generate_result()">Generate</button>  <!-- button to calculate the output-->
+            <button type="button" value="Reset" id="reset" onclick="reset1()">Reset</button>  <!-- button to reset the values-->
+
+
+
+        </div>
+
+        <br><br><br><br>
+
+        <div class="tip" id="tip">
+            Tip Amount
+            / person :<span id="s1"></span>
+
+
+            <br><br>
+            Total Amount
+            / person:<span id="s2"></span>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>      <!-- linking of the javascript file-->
+    <script src="reset.js"></script>
+</body>
+
+</html>
